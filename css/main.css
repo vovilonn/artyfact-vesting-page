@@ -27,9 +27,10 @@ body {
   border: 1px solid #3c3b40;
   border-radius: 30px;
   width: 55%;
-  height: 600px;
+  height: 630px;
   background: #171926;
   padding: 30px 40px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   .main-block {
