@@ -1,6 +1,6 @@
 @font-face {
   font-family: "aldrichrus";
-  src: local("aldrichrus"), url("../fonts/aldrichrus.ttf") format("opentype") tech(color-COLRv1);
+  src: local("aldrichrus"), url("../fonts/aldrichrus.ttf") format("opentype") tech(color-COLRv1), url("../fonts/aldrichrus.woff2") format("woff");
 }
 body {
   color: #fff;
@@ -59,12 +59,12 @@ body {
   font-family: aldrichrus;
   border-radius: 10px;
   font-size: 20px;
-  background: #ffbb0e;
+  background: linear-gradient(to left, #f8a932, #ff7246);
   border: none;
   padding: 15px 30px;
 }
 .claim-block .claim-button:hover {
-  background: #d99f0b;
+  background: #f8a932;
 }
 @media screen and (max-width: 768px) {
   .claim-block .claim-button {
