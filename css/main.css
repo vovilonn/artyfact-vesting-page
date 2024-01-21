@@ -55,6 +55,7 @@ body {
   color: #ffbb0e;
 }
 .claim-block .claim-button {
+  color: #000;
   cursor: pointer !important;
   font-family: aldrichrus;
   border-radius: 10px;
