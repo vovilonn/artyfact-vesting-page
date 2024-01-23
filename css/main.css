@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "aldrichrus";
+  src: local("aldrichrus"), url("../fonts/aldrichrus.ttf") format("opentype") tech(color-COLRv1), url("../fonts/aldrichrus.woff2") format("woff");
+}
+body {
+  color: #fff;
+  background-color: #0d0a11;
+  font-family: aldrichrus;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .title {
+  font-size: 50px;
+}
+@media screen and (max-width: 768px) {
+  .wrapper .title {
+    text-align: center;
+  }
+}
+
+.main-block {
+  border: 1px solid #3c3b40;
+  border-radius: 30px;
+  width: 55%;
+  height: 630px;
+  background: #171926;
+  padding: 30px 40px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .main-block {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-block {
+    padding: 30px 15px;
+  }
+}
+
+.claim-block {
+  padding-bottom: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.claim-block .reward-amount,
+.claim-block .reward-amount-smb {
+  color: #ffbb0e;
+}
+.claim-block .claim-button {
+  color: #000;
+  cursor: pointer !important;
+  font-family: aldrichrus;
+  border-radius: 10px;
+  font-size: 20px;
+  background: linear-gradient(to left, #f8a932, #ff7246);
+  border: none;
+  padding: 15px 30px;
+}
+.claim-block .claim-button:hover {
+  background: #f8a932;
+}
+@media screen and (max-width: 768px) {
+  .claim-block .claim-button {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .claim-block {
+    font-size: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .claim-block {
+    font-size: 20px;
+  }
+}
+
+.vesting-periods {
+  margin-top: 30px;
+}
+.vesting-periods .title {
+  font-size: 20px;
+}
+.vesting-periods .table-wrapper {
+  background: #242632;
+  border-radius: 15px;
+  padding: 15px 20px;
+  overflow: hidden;
+  margin-top: auto;
+}
+@media screen and (max-width: 768px) {
+  .vesting-periods .table-wrapper {
+    text-align: center;
+  }
+}
+.vesting-periods .table-wrapper .header,
+.vesting-periods .table-wrapper .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.vesting-periods .table-wrapper .header {
+  color: #b0adb4;
+  padding-bottom: 10px;
+}
+.vesting-periods .table-wrapper .content {
+  max-height: 370px;
+  overflow: scroll;
+  padding-top: 15px;
+  row-gap: 20px;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background: #b0adb4;
+  opacity: 0.3;
+}
+
+.color-font {
+  color: #ffbb0e;
+}/*# sourceMappingURL=main.css.map */
